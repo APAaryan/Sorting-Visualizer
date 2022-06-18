@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sorting Visualizer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="#" />
+  </head>
+  <body>
+    <header>
+      <p>Sorting Visualizer</p>
+      <nav>
+        <div class="nav_left">
+          <p>Speed of Algorithm:</p>
+          <input type="range" id="arr_speed" min="1" max="5" value="4" step="1" />
+          <p>Size of Array:</p>
+          <input type="range"  id="arr_size" min="10" max="100" value="50" step="1" />
+          <button class="btn2" id="gen_arr">Generate New Array</button>
+        </div>
+        <div class="nav_right">
+          <button class="btn" >Bubble</button>
+          <button class="btn" >Insertion</button>
+          <button class="btn" >Selection</button>
+          <button class="btn" >Quick</button>
+          <button class="btn" >Merge</button>
+        </div>
+      </nav>
+    </header>
+    <section>
+      <div class="info1" id="info1">
+        <h2>Time Complexity</h2>
+
+        <div class="complex_container" id="time_complex">
+          <div class="time_definition">
+            <p class="complex_heading">Worst Case:</p>
+            <p id="time_worst"></p>
+          </div>
+
+          <div class="time_definition">
+            <p class="complex_heading">Best Case:</p>
+            <p id="time_best"></p>
+          </div>
+
+          <div class="time_definition">
+            <p class="complex_heading">Average Case:</p>
+            <p id="time_average"></p>
+          </div>
+        </div>
+      </div>
+
+      <div id="info2">
+
+      </div>
+
+      <div class="info3" id="info3">
+        <h2>Space Complexity</h2>
+        <div class="complex_container" id="space_complex">
+          <div class="space_definition">
+            <p class="complex_heading">Worst Case:</p>
+            <p id="space_worst"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>Made By - Aaryan Raj
+    </footer>
+    <script src="./script/main.js"></script>
+    <script src="./script/visualisation.js"></script>
+    <script src="./script/bubble.js"></script>
+    <script src="./script/insertion.js"></script>
+    <script src="./script/selection.js"></script>
+    <script src="./script/merge.js"></script>
+    <script src="./script/quick.js"></script>
+  </body>
+</html>
